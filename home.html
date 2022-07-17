@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="style.css" />
+    <title>Ta-Tung - HOME</title>
+  </head>
+  <body>
+    <a href="home.html" class="logo">
+      <img class="animate fade-in" src="img/logo/logo_header2x.png" alt="logo" />
+    </a>
+    <div class="nav">
+      <div class="nav__burger" onclick="toggleNav()">
+        <div class="dot top"></div>
+        <div class="stick top"></div>
+        <div class="stick bottom"></div>
+        <div class="dot bottom"></div>
+      </div>
+
+      <div class="nav__share">
+        <div class="nav__share--button" onclick="toggleShareList()">
+          <img src="img/iconos/icn-compartir.png" alt="compartir" />
+        </div>
+        <div class="nav__share--list">
+          <div class="nav__share--list--title">
+            Compartir este producto
+            <div
+              class="nav__share--list--title--close"
+              onclick="toggleShareList()"
+            >
+              <img src="img/iconos/icn-cerrar-compartir.png" alt="" />
+            </div>
+          </div>
+          <div class="nav__share--list--content">
+            <a class="nav__share--list--content--item">
+              <img src="img/iconos/icn-facebook-granate.png" alt="" />
+            </a>
+            <a class="nav__share--list--content--item">
+              <img src="img/iconos/icn-twitter-granate.png" alt="" />
+            </a>
+            <a class="nav__share--list--content--item">
+              <img src="img/iconos/icn-instagram-granate.png" alt="" />
+            </a>
+            <a class="nav__share--list--content--item">
+              <img src="img/iconos/icn-whatsapp-granate.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav__list">
+        <div class="nav__list--item search-movile">
+          <img src="img/iconos/icn-lupa.png" alt="" />
+          <input type="search" />
+          <button>Buscar</button>
+        </div>
+        <a href="home.html" class="nav__list--item active"> Home </a>
+        <a href="productos.html" class="nav__list--item"> Productos </a>
+        <a href="blog.html" class="nav__list--item"> Blog Kav Ly </a>
+        <a href="marca.html" class="nav__list--item"> La Marca </a>
+        <a href="contacto.html" class="nav__list--item"> Contacto </a>
+        <div class="separator"></div>
+        <div class="nav__list--item search">
+          <img src="img/iconos/icn-lupa.png" alt="" />
+          <input type="search" />
+          <button>Buscar</button>
+        </div>
+        <label class="nav__list--item select">
+          <select>
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+          </select>
+          <img src="img/iconos/icn-desplegable.png" alt="" />
+        </label>
+        <div class="nav__list--social-medias">
+          <a class="nav__list--social-medias--item" href="">
+            <img src="img/iconos/icn-facebook.png" alt="" />
+          </a>
+          <a class="nav__list--social-medias--item" href="">
+            <img src="img/iconos/icn-twitter.png" alt="" />
+          </a>
+          <a class="nav__list--social-medias--item" href="">
+            <img src="img/iconos/icn-instagram.png" alt="" />
+          </a>
+          <a class="nav__list--social-medias--item" href="">
+            <img src="img/iconos/icn-youtube.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main home">
+      <div class="splash">
+        <div class="text">
+          <div class="top animate slide-top">Lo mejor</div>
+          <div class="center animate zoom-in">de asia</div>
+          <div class="bottom animate slide-bottom">en tu mesa</div>
+          <div class="separator"></div>
+        </div>
+        <div class="saber-mas animate zoom-in">saber mas</div>
+        <div class="splash__video">
+          <div class="close">
+            <img src="img/iconos/icn-menu-2.png" alt="" />
+          </div>
+          <video autoplay loop muted playsinline="playsinline">
+            <source src="video/video-home.mp4#t=0.001" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="play">
+            <img src="img/iconos/icn-play.png" alt="" />
+          </div>
+        </div>
+        <div class="splash__video--open-back"></div>
+      </div>
+      <div class="star-plates">
+        <span class="top animate slide-top">platos</span>
+        <span class="bottom animate slide-bottom">destacados</span>
+      </div>
+      <!-- productos similares -->
+      <div class="histories plate-slide">
+        <div class="histories__title"></div>
+        <div class="histories__list animate zoom-in">
+          <div class="histories__list--left hide">
+            <img src="img/iconos/icn-izquierda.png" alt="" />
+          </div>
+          <div class="histories__list--slide">
+            <a href="plato.html" class="histories__list--slide--item">
+              <div class="histories__list--slide--item--img">
+                <img src="img/productos/arroz3delicias_1.png" alt="" />
+              </div>
+              <div class="histories__list--slide--item--link">
+                arroz 3 delicias
+              </div>
+            </a>
+            <a href="plato.html" class="histories__list--slide--item">
+              <div class="histories__list--slide--item--img">
+                <img src="img/productos/arroz3delicias_1.png" alt="" />
+              </div>
+              <div class="histories__list--slide--item--link">
+                Arroz 3 Delicias CON TERNE…
+              </div>
+            </a>
+            <a href="plato.html" class="histories__list--slide--item">
+              <div class="histories__list--slide--item--img">
+                <img src="img/productos/arroz3delicias_1.png" alt="" />
+              </div>
+              <div class="histories__list--slide--item--link">
+                LONG PAO CARNE
+              </div>
+            </a>
+          </div>
+          <div class="histories__list--right hide">
+            <img src="img/iconos/icn-derecha.png" alt="" />
+          </div>
+        </div>
+        <div class="histories__dots animate fade-in">
+          <!-- the list of dots is generated automatic with js -->
+        </div>
+      </div>
+
+      <div class="chef">
+        <div class="chef__top animate slide-left">nuestra</div>
+        <div class="chef__bottom animate slide-right">chef</div>
+        <img class="animate slide-top" src="img/desktop/firmachef.png" alt="" />
+        <div class="chef__text">
+          <span class="chef__text--info animate slide-top">
+            Con más de <b>20 años de experiencia</b>, Kav Ly es una de las
+            <b>figuras más prestigiosas y reconocidas</b> de la gastronomía
+            oriental de España.
+          </span>
+          <a href="" class="chef__text--saber-mas animate slide-bottom">
+            saber más
+          </a>
+        </div>
+      </div>
+      <div class="quality">
+        <div class="quality__elaboracion animate slide-left">ELABORACIÓN Y</div>
+        <div class="quality__calidad animate slide-right">Calidad</div>
+        <div class="quality__text animate zoom-in">
+          En Ta-Tung se aplican estrictos controles internos, que incluyen
+          <b>análisis organolépticos</b> y el cumplimiento de las más rigurosas
+          <b>normas nacionales y europeas de calidad y seguridad alimentaria</b
+          >.
+        </div>
+        <a href="" class="quality__saber-mas animate slide-bottom">
+          saber más
+        </a>
+        <img
+          class="quality__img-left"
+          src="img/desktop/img-bodegon1-home.png"
+        />
+        <img
+          class="quality__img-right"
+          src="img/desktop/img-bodegon2-home.png"
+        />
+        <img class="quality__img-tomate" src="img/mobile/img-tomate.png" />
+      </div>
+
+      <!-- te puede interesar -->
+      <div class="histories te-puede-interesar animate fade-in">
+        <div class="histories__title">
+          <div class="histories__title--left">te puede</div>
+          <div class="histories__title--right">interesar</div>
+        </div>
+        <div class="histories__list">
+          <div class="histories__list--left">
+            <img src="img/iconos/icn-izquierda.png" alt="" />
+          </div>
+          <div class="histories__list--slide">
+            <a href="plato.html" class="histories__list--slide--item">
+              <div class="histories__list--slide--item--img">
+                <div class="histories__list--slide--item--border"></div>
+                <div class="histories__list--slide--item--leer">leer</div>
+                <img src="img/desktop/img-elaboracionycalidad.png" alt="" />
+              </div>
+              <div class="histories__list--slide--item--title">
+                LA HISTORIA DE LOS ROLLITOS PRIMAVERA 1
+              </div>
+            </a>
+            <a href="plato.html" class="histories__list--slide--item">
+              <div class="histories__list--slide--item--img">
+                <div class="histories__list--slide--item--border"></div>
+                <div class="histories__list--slide--item--leer">leer</div>
+                <img src="img/desktop/img-elaboracionycalidad.png" alt="" />
+              </div>
+              <div class="histories__list--slide--item--title">
+                LA HISTORIA DE LOS ROLLITOS PRIMAVERA 2
+              </div>
+            </a>
+            <a href="plato.html" class="histories__list--slide--item">
+              <div class="histories__list--slide--item--img">
+                <div class="histories__list--slide--item--border"></div>
+                <div class="histories__list--slide--item--leer">leer</div>
+                <img src="img/desktop/img-elaboracionycalidad.png" alt="" />
+              </div>
+              <div class="histories__list--slide--item--title">
+                LA HISTORIA DE LOS ROLLITOS PRIMAVERA 3
+              </div>
+            </a>
+            <a href="plato.html" class="histories__list--slide--item">
+              <div class="histories__list--slide--item--img">
+                <div class="histories__list--slide--item--border"></div>
+                <div class="histories__list--slide--item--leer">leer</div>
+                <img src="img/desktop/img-elaboracionycalidad.png" alt="" />
+              </div>
+              <div class="histories__list--slide--item--title">
+                LA HISTORIA DE LOS ROLLITOS PRIMAVERA 4
+              </div>
+            </a>
+            <a href="plato.html" class="histories__list--slide--item">
+              <div class="histories__list--slide--item--img">
+                <div class="histories__list--slide--item--border"></div>
+                <div class="histories__list--slide--item--leer">leer</div>
+                <img src="img/desktop/img-elaboracionycalidad.png" alt="" />
+              </div>
+              <div class="histories__list--slide--item--title">
+                LA HISTORIA DE LOS ROLLITOS PRIMAVERA 5
+              </div>
+            </a>
+            <a href="plato.html" class="histories__list--slide--item">
+              <div class="histories__list--slide--item--img">
+                <div class="histories__list--slide--item--border"></div>
+                <div class="histories__list--slide--item--leer">leer</div>
+                <img src="img/desktop/img-elaboracionycalidad.png" alt="" />
+              </div>
+              <div class="histories__list--slide--item--title">
+                LA HISTORIA DE LOS ROLLITOS PRIMAVERA 6
+              </div>
+            </a>
+          </div>
+          <div class="histories__list--right">
+            <img src="img/iconos/icn-derecha.png" alt="" />
+          </div>
+        </div>
+        <div class="histories__dots">
+          <!-- the list of dots is generated automatic with js -->
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__links">
+        <div class="footer__link-list">
+          <a class="footer__link-list--item"> Rollitos </a>
+          <a class="footer__link-list--item"> Carnes </a>
+          <a class="footer__link-list--item"> Arroces </a>
+          <a class="footer__link-list--item"> Pastas </a>
+          <a class="footer__link-list--item"> Tapeo </a>
+          <div class="footer__link-list--separator"></div>
+        </div>
+
+        <div class="footer__link-list">
+          <a class="footer__link-list--item"> La Marca </a>
+          <a class="footer__link-list--item"> Chef Kav Ly </a>
+          <a class="footer__link-list--item"> Elaboración y calidad </a>
+          <a class="footer__link-list--item"> Investigación </a>
+          <a class="footer__link-list--item"> Premios </a>
+          <div class="footer__link-list--separator"></div>
+        </div>
+
+        <div class="footer__link-list">
+          <a class="footer__link-list--item"> Contactar </a>
+          <div class="footer__link-list--social-medias">
+            <a class="footer__link-list--item">
+              <img src="img/iconos/icn-facebook.png" alt="" />
+            </a>
+            <a class="footer__link-list--item">
+              <img src="img/iconos/icn-twitter.png" alt="" />
+            </a>
+            <a class="footer__link-list--item">
+              <img src="img/iconos/icn-instagram.png" alt="" />
+            </a>
+            <a class="footer__link-list--item">
+              <img src="img/iconos/icn-youtube.png" alt="" />
+            </a>
+          </div>
+          <div class="footer__link-list--separator last"></div>
+        </div>
+      </div>
+      <div class="footer__logo">
+        <img src="img/logo/logo_footer.png" alt="" />
+        <div class="top">© Ta-Tung Platos Precocinados S.L.</div>
+        <div class="center">
+          <span>
+            Avda. de Torrelles de Llobregat s/n. Polígono industrial
+          </span>
+          <span>
+            “La Barruana” - 08620 Sant Vicenç dels Horts – Barcelona
+          </span>
+        </div>
+        <div class="bottom">
+          <a href="nota-legal.html"> Nota Legal </a>
+          <a> Política de Privacidad </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="swiper.js"></script>
+  <script src="script.js"></script>
+</html>

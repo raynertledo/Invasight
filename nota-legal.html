@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ta-Tung - PLATO</title>
+  </head>
+  <body>
+    <a href="home.html" class="logo">
+      <img class="animate fade-in" src="img/logo/logo_header2x.png" alt="logo" />
+    </a>
+    <div class="nav">
+      <div class="nav__burger" onclick="toggleNav()">
+        <div class="dot top"></div>
+        <div class="stick top"></div>
+        <div class="stick bottom"></div>
+        <div class="dot bottom"></div>
+      </div>
+
+      <div class="nav__share">
+        <div class="nav__share--button" onclick="toggleShareList()">
+          <img src="img/iconos/icn-compartir.png" alt="compartir" />
+        </div>
+        <div class="nav__share--list">
+          <div class="nav__share--list--title">
+            Compartir este producto
+            <div
+              class="nav__share--list--title--close"
+              onclick="toggleShareList()"
+            >
+              <img src="img/iconos/icn-cerrar-compartir.png" alt="" />
+            </div>
+          </div>
+          <div class="nav__share--list--content">
+            <a class="nav__share--list--content--item">
+              <img src="img/iconos/icn-facebook-granate.png" alt="" />
+            </a>
+            <a class="nav__share--list--content--item">
+              <img src="img/iconos/icn-twitter-granate.png" alt="" />
+            </a>
+            <a class="nav__share--list--content--item">
+              <img src="img/iconos/icn-instagram-granate.png" alt="" />
+            </a>
+            <a class="nav__share--list--content--item">
+              <img src="img/iconos/icn-whatsapp-granate.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav__list">
+        <div class="nav__list--item search-movile">
+          <img src="img/iconos/icn-lupa.png" alt="" />
+          <input type="search" />
+          <button>Buscar</button>
+        </div>
+        <a href="home.html" class="nav__list--item"> Home </a>
+        <a href="productos.html" class="nav__list--item"> Productos </a>
+        <a href="blog.html" class="nav__list--item"> Blog Kav Ly </a>
+        <a href="marca.html" class="nav__list--item"> La Marca </a>
+        <a href="contacto.html" class="nav__list--item"> Contacto </a>
+        <div class="separator"></div>
+        <div class="nav__list--item search">
+          <img src="img/iconos/icn-lupa.png" alt="" />
+          <input type="search" />
+          <button>Buscar</button>
+        </div>
+        <label class="nav__list--item select">
+          <select>
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+          </select>
+          <img src="img/iconos/icn-desplegable.png" alt="" />
+        </label>
+        <div class="nav__list--social-medias">
+          <a class="nav__list--social-medias--item" href="">
+            <img src="img/iconos/icn-facebook.png" alt="" />
+          </a>
+          <a class="nav__list--social-medias--item" href="">
+            <img src="img/iconos/icn-twitter.png" alt="" />
+          </a>
+          <a class="nav__list--social-medias--item" href="">
+            <img src="img/iconos/icn-instagram.png" alt="" />
+          </a>
+          <a class="nav__list--social-medias--item" href="">
+            <img src="img/iconos/icn-youtube.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main nota-legal">
+      <div class="title">NOTA LEGAL</div>
+      <div class="text">
+        <p><b>1. Información del prestador del Servicios</b></p>
+        <div>Denominación social: Ta-Tung</div>
+        <div>Platos Precocinados S.L. (en adelante Ta-Tung)</div>
+        <div>
+          Domicilio social: Av. Torrelles de Llobregat s/n. Pol. Industrial La
+          Barruana. 08620 St. Vicenç dels Horts - Barcelona
+        </div>
+        <div>NIF: B-61325148</div>
+        <div>Teléfono: 93 298 02 84</div>
+        <div>Fax: 93 298 03 22</div>
+        <div>eMail: ta-tung@ta-tung.com</div>
+        <div>
+          Registro Mercantil: de Barcelona, Folio 0071, Tomo 29709, Hoja 160614,
+          Inscripción 3ª
+        </div>
+        <p><b>2. Objeto</b></p>
+        <p>
+          El prestador, responsable del sitio web, pone a disposición de los
+          usuarios el presente documento con el que pretende dar cumplimiento a
+          las obligaciones dispuestas en la Ley 34/2002, de Servicios de la
+          Sociedad de la Información y del Comercio Electrónico (LSSI-CE), así
+          como informar a todos los usuarios del sitio web respecto a cuáles son
+          las condiciones de uso del sitio web.
+        </p>
+        <p>
+          Toda persona que acceda a este sitio web asume el papel de usuario,
+          comprometiéndose a la observancia y cumplimiento riguroso de las
+          disposiciones aquí dispuestas, así como a cualesquiera otra
+          disposición legal que fuera de aplicación.
+        </p>
+        <p>
+          El prestador se reserva el derecho a modificar cualquier tipo de
+          información que pudiera aparecer en el sitio web, sin que exista
+          obligación de preavisar o poner en conocimiento de los usuarios dichas
+          obligaciones, entendiéndose como suficiente con la publicación en el
+          sitio web del prestador.
+        </p>
+        <p><b>3. Uso de Cookies</b></p>
+        <p>
+          Este sitio web podrá utilizar cookies para facilitar la navegación del
+          usuario de manera anónima (pequeños archivos de información que el
+          servidor envía al ordenador de quien accede a esta página) para
+          obtener información de carácter no personal a escala global. No se
+          recoge ningún tipo de información a escala individual tan solo es
+          información que nos permite mejorar esta página web con carácter
+          genérico.
+        </p>
+        <p>
+          Concretamente utilizamos cookies de Google Analytics con la finalidad
+          de recopilar datos de navegación de manera anónima y poder analizar la
+          información recopilada de forma estadística con objeto de mejorar la
+          web. Y cookies del servicio Addthis que son cookies persistentes de
+          tercera parte que almacena información anónima del visitante mientras
+          proporciona un servicio de compatición de contenidos en redes
+          sociales.
+        </p>
+        <p>
+          Sin embargo, el usuario podrá configurar su equipo para aceptar o
+          rechazar las cookies que reciba (preferencias u opciones de privacidad
+          de su navegador). A continuación ponemos a su disposición los links
+          para deshabilitar las cookies de los principales navegadores:
+        </p>
+        <div>- Internet Explorer</div>
+        <div>- Mozilla Firefox</div>
+        <div>- Google Chrome</div>
+        <div>- Safari .</div>
+        <p><b>5.1 4 Responsabilidad</b></p>
+        <p>
+          El prestador se exime de cualquier tipo de responsabilidad derivada de
+          la información publicada en su sitio web, siempre que esta información
+          haya sido manipulada o introducida por un tercero ajeno al mismo.
+        </p>
+
+        <p>
+          Desde el sitio web del prestador es posible que se redirija a
+          contenidos de terceros sitios web. Dado que el prestador no puede
+          controlar siempre los contenidos introducidos por los terceros en sus
+          sitios web, éste no asume ningún tipo de responsabilidad respecto a
+          dichos contenidos. En todo caso, el prestador manifiesta que procederá
+          a la retirada inmediata de cualquier contenido que pudiera contravenir
+          la legislación nacional o internacional, la moral o el orden público,
+          procediendo a la retirada inmediata de la redirección a dicho sitio
+          web, poniendo en conocimiento de las autoridades competentes el
+          contenido en cuestión.
+        </p>
+        <p>
+          El prestador no se hace responsable de la información y contenidos
+          almacenados, a título enunciativo pero no limitativo, en foros,
+          chat´s, generadores de blogs, comentarios, redes sociales o
+          cualesquiera otro medio que permita a terceros publicar contenidos de
+          forma independiente en la páginas web del prestador. No obstante y en
+          cumplimiento de lo dispuesto en el art. 11 y 16 de la LSSI-CE, el
+          prestador se pone a disposición de todos los usuarios, autoridades y
+          fuerzas de seguridad, y colaborando de forma activa en la retirada o
+          en su caso bloqueo de todos aquellos contenidos que pudieran afectar o
+          contravenir la legislación nacional, o internacional, derechos de
+          terceros o la moral y el orden público. En caso de que el usuario
+          considere que existe en el sitio web algún contenido que pudiera ser
+          susceptible de esta clasificación, se ruega lo notifique de forma
+          inmediata al administrador del sitio web.
+        </p>
+        <b>5. Propiedad contenidos</b>
+        <p>
+          El sitio web, incluyendo a título enunciativo pero no limitativo su
+          programación, edición, compilación y demás elementos necesarios para
+          su funcionamiento, los diseños, logotipos, texto y/o gráficos son
+          propiedad de Ta-Tung o en su caso dispone de licencia o autorización
+          expresa por parte de los autores. Todos los contenidos del sitio web
+          se encuentran debidamente protegidos por la normativa de propiedad
+          intelectual e industrial, así como inscritos en los registros públicos
+          correspondientes.
+        </p>
+        <p>
+          Los diseños, logotipos, texto y/o gráficos ajenos al prestador y que
+          pudieran aparecer en el sitio web, pertenecen a sus respectivos
+          propietarios, siendo ellos mismos responsables de cualquier posible
+          controversia que pudiera suscitarse respecto a los mismos. En todo
+          caso, el prestador cuenta con la autorización expresa y previa por
+          parte de los mismos.
+        </p>
+        <p>
+          Independientemente de la finalidad para la que fueran destinados, la
+          reproducción total o parcial, uso, explotación, distribución y
+          comercialización, requiere en todo caso de la autorización escrita
+          previa por parte del prestador. Cualquier uso no autorizado
+          previamente por parte del prestador será considerado un incumplimiento
+          grave de los derechos de propiedad intelectual o industrial del autor.
+        </p>
+        <p>
+          Para realizar cualquier tipo de observación o duda respecto a posibles
+          incumplimientos de los derechos de propiedad intelectual o industrial,
+          así como sobre cualquiera de los contenidos del sitio web,
+          contáctenos.
+        </p>
+        <b>6. Política de Privacidad</b>
+        <p>
+          El prestador del servicio se encuentra profundamente comprometido con
+          el cumplimiento de la normativa española de protección de datos de
+          carácter personal, y garantiza el cumplimiento íntegro de las
+          obligaciones dispuestas, así como la implementación de las medidas de
+          seguridad dispuestas en el art. 9 de la Ley 15/1999, de Protección de
+          Datos de Carácter Personal (LOPD) y en el Reglamento de Desarrollo de
+          la LOPD.
+        </p>
+        <p>
+          A los efectos de lo dispuesto en la Ley Orgánica 15/1999 de 13 de
+          diciembre de Protección de Datos de Carácter Personal, la persona que
+          contacte con Ta-Tung a través de las direcciones de e-mail indicadas
+          en esta web site, autoriza y consiente expresamente que sus datos
+          personales y su dirección de correo electrónico sean incorporados a
+          ficheros automatizados de esta empresa. El archivo de dichos datos
+          tiene como finalidad dar respuesta a las cuestiones que nos plantea el
+          usuario. Asimismo dichos datos podrán ser utilizados para remitir
+          informaciones comerciales y publicitarias así como promociónales
+          especialmente diseñadas para los interesados, siempre que usted no se
+          haya opuesto a esta utilización.
+        </p>
+        <p>
+          El responsable del fichero es Ta-Tung Platos Precocinados S.L.
+          (C/Corominas 37, L’Hospitalet 08902 Barcelona) En esta misma
+          dirección, los interesados podrán ejercitar el derecho de acceso,
+          rectificación y cancelación de los datos, enviando una solicitud
+          escrita y firmada incluyendo nombre, apellidos, DNI, actuación que
+          solicita y domicilio del usuario a fin de remitirle la confirmación de
+          su actuación conforme a su solicitud.
+        </p>
+        <p>
+          En todo caso, Ta-Tung garantiza la salvaguarda de la confidencialidad
+          y seguridad de los Datos Personales, habiendo adoptado las medidas
+          legalmente exigidas de seguridad, que permiten razonablemente asegurar
+          la protección de sus datos personales y evitar la pérdida, mal uso,
+          alteración, tratamiento o acceso no autorizado de los mismos.
+        </p>
+        <p>
+          Los formularios contenidos en esta web site no van dirigidos a
+          personas menores de edad y, por lo tanto, Ta-Tung no se hace
+          responsable de los casos en que personas menores de edad le hayan
+          remitido datos de carácter personal a través de este web site. En todo
+          caso, los titulares de la patria potestad del menor podrán ejercitar
+          el derecho de acceso, rectificación y cancelación de los datos,
+          enviando una solicitud escrita y firmada incluyendo nombre, apellidos
+          y DNI con las instrucciones precisas al efecto a la dirección
+          mencionada en el párrafo anterior. En la gestión de las peticiones
+          recibidas de los usuarios, Ta-Tung se reserva el derecho a efectuar
+          las averiguaciones oportunas. con el fin de asegurarse de que la
+          respuesta o información solicitada y/o ofrecida es adecuada.
+        </p>
+        <b>7. Ley Aplicable</b>
+        <p>
+          Para la resolución de todas las controversias o cuestiones
+          relacionadas con el presente sitio web o de las actividades en él
+          desarrolladas, será de aplicación la legislación española, a la que se
+          someten expresamente las partes, siendo competentes para la resolución
+          de todos los conflictos derivados o relacionados con su uso los
+          Juzgados y Tribunales de Barcelona.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__links">
+        <div class="footer__link-list">
+          <a class="footer__link-list--item"> Rollitos </a>
+          <a class="footer__link-list--item"> Carnes </a>
+          <a class="footer__link-list--item"> Arroces </a>
+          <a class="footer__link-list--item"> Pastas </a>
+          <a class="footer__link-list--item"> Tapeo </a>
+          <div class="footer__link-list--separator"></div>
+        </div>
+
+        <div class="footer__link-list">
+          <a class="footer__link-list--item"> La Marca </a>
+          <a class="footer__link-list--item"> Chef Kav Ly </a>
+          <a class="footer__link-list--item"> Elaboración y calidad </a>
+          <a class="footer__link-list--item"> Investigación </a>
+          <a class="footer__link-list--item"> Premios </a>
+          <div class="footer__link-list--separator"></div>
+        </div>
+
+        <div class="footer__link-list">
+          <a class="footer__link-list--item"> Contactar </a>
+          <div class="footer__link-list--social-medias">
+            <a class="footer__link-list--item">
+              <img src="img/iconos/icn-facebook.png" alt="" />
+            </a>
+            <a class="footer__link-list--item">
+              <img src="img/iconos/icn-twitter.png" alt="" />
+            </a>
+            <a class="footer__link-list--item">
+              <img src="img/iconos/icn-instagram.png" alt="" />
+            </a>
+            <a class="footer__link-list--item">
+              <img src="img/iconos/icn-youtube.png" alt="" />
+            </a>
+          </div>
+          <div class="footer__link-list--separator last"></div>
+        </div>
+      </div>
+      <div class="footer__logo">
+        <img src="img/logo/logo_footer.png" alt="" />
+        <div class="top">© Ta-Tung Platos Precocinados S.L.</div>
+        <div class="center">
+          <span>
+            Avda. de Torrelles de Llobregat s/n. Polígono industrial
+          </span>
+          <span>
+            “La Barruana” - 08620 Sant Vicenç dels Horts - Barcelona
+          </span>
+        </div>
+        <div class="bottom">
+          <a> Nota Legal </a>
+          <a> Política de Privacidad </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="swiper.js"></script>
+  <script src="script.js"></script>
+</html>

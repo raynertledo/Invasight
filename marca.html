@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ta-Tung - LA MARCA</title>
+  </head>
+  <body>
+    <a href="home.html" class="logo">
+      <img class="animate fade-in" src="img/logo/logo_header2x.png" alt="logo" />
+    </a>
+    <div class="nav">
+      <div class="nav__burger" onclick="toggleNav()">
+        <div class="dot top"></div>
+        <div class="stick top"></div>
+        <div class="stick bottom"></div>
+        <div class="dot bottom"></div>
+      </div>
+
+      <div class="nav__share">
+        <div class="nav__share--button" onclick="toggleShareList()">
+          <img src="img/iconos/icn-compartir.png" alt="compartir" />
+        </div>
+        <div class="nav__share--list">
+          <div class="nav__share--list--title">
+            Compartir este producto
+            <div
+              class="nav__share--list--title--close"
+              onclick="toggleShareList()"
+            >
+              <img src="img/iconos/icn-cerrar-compartir.png" alt="" />
+            </div>
+          </div>
+          <div class="nav__share--list--content">
+            <a class="nav__share--list--content--item">
+              <img src="img/iconos/icn-facebook-granate.png" alt="" />
+            </a>
+            <a class="nav__share--list--content--item">
+              <img src="img/iconos/icn-twitter-granate.png" alt="" />
+            </a>
+            <a class="nav__share--list--content--item">
+              <img src="img/iconos/icn-instagram-granate.png" alt="" />
+            </a>
+            <a class="nav__share--list--content--item">
+              <img src="img/iconos/icn-whatsapp-granate.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav__list">
+        <div class="nav__list--item search-movile">
+          <img src="img/iconos/icn-lupa.png" alt="" />
+          <input type="search" />
+          <button>Buscar</button>
+        </div>
+        <a href="home.html" class="nav__list--item"> Home </a>
+        <a href="productos.html" class="nav__list--item"> Productos </a>
+        <a href="blog.html" class="nav__list--item"> Blog Kav Ly </a>
+        <a href="marca.html" class="nav__list--item active"> La Marca </a>
+        <a href="contacto.html" class="nav__list--item"> Contacto </a>
+        <div class="separator"></div>
+        <div class="nav__list--item search">
+          <img src="img/iconos/icn-lupa.png" alt="" />
+          <input type="search" />
+          <button>Buscar</button>
+        </div>
+        <label class="nav__list--item select">
+          <select>
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+          </select>
+          <img src="img/iconos/icn-desplegable.png" alt="" />
+        </label>
+        <div class="nav__list--social-medias">
+          <a class="nav__list--social-medias--item" href="">
+            <img src="img/iconos/icn-facebook.png" alt="" />
+          </a>
+          <a class="nav__list--social-medias--item" href="">
+            <img src="img/iconos/icn-twitter.png" alt="" />
+          </a>
+          <a class="nav__list--social-medias--item" href="">
+            <img src="img/iconos/icn-instagram.png" alt="" />
+          </a>
+          <a class="nav__list--social-medias--item" href="">
+            <img src="img/iconos/icn-youtube.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main marca">
+      <div class="sub-nav">
+        <a class="sub-nav__item active" onclick="setScroll('historia')">
+          Historia
+        </a>
+        <a class="sub-nav__item" onclick="setScroll('chef')"> Chef </a>
+        <a class="sub-nav__item" onclick="setScroll('calidad')"> Calidad </a>
+        <a class="sub-nav__item" onclick="setScroll('investigacion')">
+          Investigación
+        </a>
+        <a class="sub-nav__item" onclick="setScroll('premios')"> Premios </a>
+      </div>
+      <!-- historia -->
+      <div id="historia" class="marca__div historia">
+        <div class="historia__background"></div>
+        <div class="historia__carrousel animate zoom-in">
+          <div class="historia__carrousel--previo" onclick="previoRelato()">
+            <img src="img/iconos/icn-siguiente.png" alt="" />
+          </div>
+          <div class="historia__carrousel--next" onclick="nextRelato()">
+            <img src="img/iconos/icn-siguiente.png" alt="" />
+          </div>
+          <div class="historia__line"></div>
+          <div class="historia__ruleta">
+            <!-- 80s -->
+            <div class="historia__relato active">
+              <img class="historia__relato--background" src="img/desktop/fondo-historia2x.png" alt="" >
+              <div class="historia__relato--year">
+                80
+                <div class="historia__relato--year--s">s</div>
+              </div>
+              <div class="historia__relato--title">los orígenes</div>
+              <div class="historia__relato--text">
+                En 1980 nace Ta-Tung, un <b>restaurante asiático</b> que hoy día
+                todavía regenta la chef Kav Ly. Este negocio familiar se
+                encuentra en la calle Mare de Déu de la Salut, 75, en el
+                distrito de Gracia en Barcelona.
+              </div>
+            </div>
+            <!-- 90s -->
+            <div class="historia__relato">
+              <img class="historia__relato--background" src="img/desktop/home-header2x.png" alt="" >
+              <div class="historia__relato--year">
+                90
+                <div class="historia__relato--year--s">s</div>
+              </div>
+              <div class="historia__relato--title">los orígenes</div>
+              <div class="historia__relato--text">
+                En 1980 nace Ta-Tung, un <b>restaurante asiático</b> que hoy día
+                todavía regenta la chef Kav Ly. Este negocio familiar se
+                encuentra en la calle Mare de Déu de la Salut, 75, en el
+                distrito de Gracia en Barcelona.
+              </div>
+            </div>
+            <!-- 10s -->
+            <div class="historia__relato">
+              <img class="historia__relato--background" src="img/desktop/img-chef2x.png" alt="" >
+              <div class="historia__relato--year">
+                10
+                <div class="historia__relato--year--s">s</div>
+              </div>
+              <div class="historia__relato--title">los orígenes</div>
+              <div class="historia__relato--text">
+                En 1980 nace Ta-Tung, un <b>restaurante asiático</b> que hoy día
+                todavía regenta la chef Kav Ly. Este negocio familiar se
+                encuentra en la calle Mare de Déu de la Salut, 75, en el
+                distrito de Gracia en Barcelona.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="historia__dots">
+          <!-- Auto fill in js -->
+        </div>
+      </div>
+      <!-- chef -->
+      <div id="chef" class="marca__div chef">
+        <div class="chef__left">
+          <div class="chef__left--top animate fade-in">nuestra</div>
+          <div class="chef__left--bottom animate slide-left">chef</div>
+          <img
+            class="chef__left--palillos animate slide-bottom"
+            src="img/desktop/img-palilloschef.png"
+            alt=""
+          />
+          <img
+            class="chef__left--firma animate zoom-in"
+            src="img/desktop/firmanuestrachef2x.png"
+            alt=""
+          />
+        </div>
+        <div class="chef__right animate slide-right">
+          <p>
+            Con más de <b>20 años de experiencia</b> como jefe de cocina en
+            algunos de los <b>mejores restaurantes de cocina asiática</b> de
+            Barcelona, Kav Ly es una de las figuras más prestigiosas y
+            reconocidas de la gastronomía oriental de España.
+          </p>
+          <p>
+            De origen camboyano, impulsó la creación de Ta-Tung en 1980 y
+            ofreció platos preparados de recetas orientales en España, llegando
+            a convertirse en
+            <b>la marca por excelencia y líder en gastronomía asiática</b> de
+            nuestro país.
+          </p>
+          <p>
+            No obstante, sus inicios no fueron fáciles: llegó a España huyendo
+            de una guerra, en un momento en el que la cocina asiática no era tan
+            popular como ahora. Sin embargo, la chef siempre tuvo claro que no
+            quería estar bajo las órdenes de nadie, sino ser su propia jefa.
+            Así, decidió embarcarse en esta aventura, y
+            <b
+              >su carácter inquieto y emprendedor, ha hecho de Ta-Tung la gran
+              empresa que es hoy</b
+            >.
+          </p>
+        </div>
+        <div class="chef__back"></div>
+      </div>
+      <!-- calidad -->
+      <div id="calidad" class="marca__div calidad">
+        <div class="calidad__left ">
+          <div class="calidad__left--top animate slide-left">ELABORACIÓN Y</div>
+          <div class="calidad__left--center animate slide-right">Calidad</div>
+          <div class="calidad__left--bottom">
+            <p class="animate slide-bottom">
+              Desde las amplias y modernas instalaciones productivas de Ta-Tung
+              en Barcelona, se aplican estrictos controles internos, que
+              incluyen análisis organolépticos de todos los productos, es decir,
+              <b
+                >valoraciones cualitativas para confirmar la calidad de cada una
+                de sus referencias </b
+              >. Además, el proceso productivo de Ta-Tung se rige por las más
+              rigurosas normas nacionales y europeas de calidad y seguridad
+              alimentaria.
+            </p>
+            <p class="animate slide-bottom">
+              Nuestros populares rollitos, elaborados y enrollados manualmente,
+              destacan por la calidad y naturalidad de sus ingredientes; los
+              arroces, platos de carne, sushi o tallarines,
+              <b
+                >se elaboran garantizando en todo momento el mantenimiento del
+                sabor</b
+              >, las vitaminas y los nutrientes de un plato elaborado en casa,
+              aunque con menor contenido en grasas y sal.
+            </p>
+            <p class="animate slide-bottom">
+              Los detallados y meticulosos procesos de cocción al wok o al vapor
+              permiten alcanzar <b>el punto exacto de sabor y autenticidad</b>.
+              Un producto auténticamente fusión; una combinación de color,
+              aroma, sabor, forma y textura, resultado de la mezcla de culturas
+              que conforman el continente asiático.
+            </p>
+          </div>
+          <img
+            class="calidad__left--verdura-palillos"
+            src="img/desktop/img-elaboracionycalidad-2.png"
+            alt=""
+          />
+          <img
+            class="calidad__left--palillos"
+            src="img/mobile/img-investigacionydesarrollo.png"
+            alt=""
+          />
+          <img
+            class="calidad__left--verdura"
+            src="img/mobile/img-elaboracionycalidad-2.png"
+            alt=""
+          />
+        </div>
+        <div class="calidad__right"></div>
+      </div>
+      <!-- investigacion -->
+      <div id="investigacion" class="marca__div investigacion">
+        <div class="investigacion__top animate slide-right">INVESTIGACIÓN Y</div>
+        <div class="investigacion__center animate zoom-in">DESARROLLO</div>
+        <div class="investigacion__bottom">
+          <p class="animate slide-bottom">
+            La cocina de Kav Ly en su oficina central de Sant Vicenç dels Horts
+            (Barcelona), es un <b>gran laboratorio de ideas</b> en el que se
+            otorga una gran importancia al I+D, siempre pendientes de las
+            necesidades del mercado.
+          </p>
+          <p class="animate slide-bottom">
+            Las verduras frescas recogidas en los
+            <b>huertos del Maresme y el Delta del Llobregat</b> se mezclan con
+            especies, algas e ingredientes deshidratados tradicionales de las
+            gastronomía china, camboyana o japonesa.
+          </p>
+          <p class="animate slide-bottom">
+            Esta innovación constante se alimenta de una
+            <b>exhaustiva investigación</b>, que consiste en la realización de
+            <b>diferentes estudios de hábitos de consumo</b>, así como de la
+            participación y visita a las ferias internacionales más importantes
+            del sector.
+          </p>
+        </div>
+      </div>
+      <!-- premios -->
+      <div id="premios" class="marca__div premios">
+        <div class="premios__top">
+          <div class="premios__top--text">
+            <img class="animate slide-top" src="img/iconos/icn-premios.png" alt="" />
+            <div class="animate zoom-in">premios</div>
+          </div>
+        </div>
+        <div class="premios__bottom">
+          <div class="premios__bottom__carrousel animate zoom-in">
+            <div
+              class="premios__bottom__carrousel--previo"
+              onclick="previoPremiosRelato()"
+            >
+              <img src="img/iconos/icn-siguiente.png" alt="" />
+            </div>
+            <div
+              class="premios__bottom__carrousel--next"
+              onclick="nextPremiosRelato()"
+            >
+              <img src="img/iconos/icn-siguiente.png" alt="" />
+            </div>
+            <div class="premios__bottom__line"></div>
+            <div class="premios__bottom__ruleta">
+              <div class="premios__bottom__relato active">
+                <div class="premios__bottom__relato--img">
+                  <img src="img/desktop/img-elaboracionycalidad.png" alt="" />
+                  <div class="premios__bottom__relato--img--text">
+                    gran premio a la innovación 2018
+                  </div>
+                </div>
+              </div>
+              <div class="premios__bottom__relato">
+                <div class="premios__bottom__relato--img">
+                  <img src="img/desktop/img-elaboracionycalidad.png" alt="" />
+                  <div class="premios__bottom__relato--img--text">
+                    gran premio a la innovación 2019
+                  </div>
+                </div>
+              </div>
+              <div class="premios__bottom__relato">
+                <div class="premios__bottom__relato--img">
+                  <img src="img/desktop/img-elaboracionycalidad.png" alt="" />
+                  <div class="premios__bottom__relato--img--text">
+                    gran premio a la innovación 2020
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="premios__bottom__dots animate fade-in">
+            <!-- Auto fill in js -->
+          </div>
+          <div class="premios__bottom--info animate zoom-in">
+            En Ta-Tung, trabajamos día a día para ofrecerte
+            <b>la mejor gastronomía asiática</b>, apostando por la innovación y
+            la calidad. Prueba de ello son los premios y reconocimientos que
+            hemos recibido.
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer__links">
+          <div class="footer__link-list">
+            <a class="footer__link-list--item"> Rollitos </a>
+            <a class="footer__link-list--item"> Carnes </a>
+            <a class="footer__link-list--item"> Arroces </a>
+            <a class="footer__link-list--item"> Pastas </a>
+            <a class="footer__link-list--item"> Tapeo </a>
+            <div class="footer__link-list--separator"></div>
+          </div>
+
+          <div class="footer__link-list">
+            <a class="footer__link-list--item"> La Marca </a>
+            <a class="footer__link-list--item"> Chef Kav Ly </a>
+            <a class="footer__link-list--item"> Elaboración y calidad </a>
+            <a class="footer__link-list--item"> Investigación </a>
+            <a class="footer__link-list--item"> Premios </a>
+            <div class="footer__link-list--separator"></div>
+          </div>
+
+          <div class="footer__link-list">
+            <a class="footer__link-list--item"> Contactar </a>
+            <div class="footer__link-list--social-medias">
+              <a class="footer__link-list--item">
+                <img src="img/iconos/icn-facebook.png" alt="" />
+              </a>
+              <a class="footer__link-list--item">
+                <img src="img/iconos/icn-twitter.png" alt="" />
+              </a>
+              <a class="footer__link-list--item">
+                <img src="img/iconos/icn-instagram.png" alt="" />
+              </a>
+              <a class="footer__link-list--item">
+                <img src="img/iconos/icn-youtube.png" alt="" />
+              </a>
+            </div>
+            <div class="footer__link-list--separator last"></div>
+          </div>
+        </div>
+        <div class="footer__logo">
+          <img src="img/logo/logo_footer.png" alt="" />
+          <div class="top">© Ta-Tung Platos Precocinados S.L.</div>
+          <div class="center">
+            <span>
+              Avda. de Torrelles de Llobregat s/n. Polígono industrial
+            </span>
+            <span>
+              “La Barruana” - 08620 Sant Vicenç dels Horts - Barcelona
+            </span>
+          </div>
+          <div class="bottom">
+            <a> Nota Legal </a>
+            <a> Política de Privacidad </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="swiper.js"></script>
+  <script src="script.js"></script>
+</html>
